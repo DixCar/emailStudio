@@ -1,0 +1,12 @@
+- **<i class="fas fa-paper-plane"></i> Quick Start**
+- [Download Templates](quickstart.md)
+- [Change Log](changelog.md)
+- [Workflow](workflow.md)
+- **<i class="fas fa-link"></i> Initial Setup**
+- [WebTools](webtools.md)
+- **<i class="fas fa-terminal"></i> Initial Setup**
+- [Markdown](markdown.md)
+- **<i class="fas fa-java"></i> Java Script**
+- [JS Snippets](jssnippets.md)
+- **<i class="fas fa-graduation-cap"></i> Tutorials**
+- [Photoshop](tutorials-photoshop.md)

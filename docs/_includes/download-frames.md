@@ -1,0 +1,7 @@
+- [<i class="fas fa-fw fa-file-download"></i>Currys](https://dixonsretail.sharepoint.com/sites/emailcrm/Shared%20Documents/_Assets/__Templates/Adobe%20Campaign/Master%20Template/AC_Skeleton_Currys.html?csf=1 'download')
+- [<i class="fas fa-fw fa-file-download"></i>PCWorld](https://dixonsretail.sharepoint.com/sites/emailcrm/Shared%20Documents/_Assets/__Templates/Adobe%20Campaign/Master%20Template/AC_Skeleton_PCWorld.html?csf=1 'download')
+- [<i class="fas fa-fw fa-file-download"></i>PCWBusiness](https://dixonsretail.sharepoint.com/sites/emailcrm/Shared%20Documents/_Assets/__Templates/Adobe%20Campaign/Master%20Template/AC_Skeleton_PCWBusiness.html?csf=1 'download')
+- [<i class="fas fa-fw fa-times"></i>iD Mobile](# 'disabled')
+- [<i class="fas fa-fw fa-times"></i>TeamKnowHow](# 'disabled')
+- [<i class="fas fa-fw fa-times"></i>DixonsTravel](# 'disabled')
+- [<i class="fas fa-fw fa-times"></i>CarphoneWarehouse](# 'disabled')

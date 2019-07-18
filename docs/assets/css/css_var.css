@@ -1,0 +1,148 @@
+:root {
+  --theme: #60727b;
+  --base-color: #698290;
+--red: #E51639;
+
+  --sb-link-1: #35B1FF; --sb-link-2: #FF7070; --sb-link-3: #08B29E;
+--code: #35B1FF;
+     --bg: #F4F4F4;
+    --txt: #FFC447;
+   --link: #FF7070; /* links only */
+
+   --info: #2AC98F; /* such a tips and advice */
+  --alert: #FF7070; /* important things */
+
+    --off: #D3C9B3; /* disable and icons */
+ --border: #EFEFEF; /* also <hr> */
+ --gutter: #DDDDDD; /* to make split for 'sudo 2 columns' in table */
+ --strong-color: #9cbaca;
+
+/* >>> Warnings Blockquotes */
+
+    /* big contrast */
+    --primary-alert--     :#FFAA19;
+    --secondary-alert--   :#E51639;
+    --help-alert--        :#16E5C3;
+    --bug-alert--         :#E51639;
+    --info-alert--       :#0098E5;
+
+/* tint */
+--secondary-alert     :#FFC86C;
+--primary-alert   :#F07F93;
+--help-alert        :#5CBDEE;
+--bug-alert         :#E51639;
+--info-alert        :#6AEED8;
+--code-alert        :#6AEED8;
+
+/* >>> Headers */
+--heading-h1-color: #0098E5;
+--heading-h2-color: #5CBDEE;
+--heading-h3-color: #91c8de;
+--heading-h-color: #698290;
+
+ /* links in markdown-section only*/
+--link-color-hover: #16E5C3;
+--link-color: #698290;
+--link-disabled: #495e69;
+--fa: "Font Awesome 5 Free";
+--fa-weight: 900;
+--no-padding: 0 0;
+}
+/* >>> Content */
+.content > .markdown-section { width: 94% !important; }
+
+/* >>> Headers */
+.markdown-section a.anchor:hover { text-decoration: none; }
+.markdown-section h1 { color: var(--heading-h1-color); font-size: 4em; }
+.markdown-section h2 { color: var(--heading-h2-color); font-size: 2em; padding-bottom: 10px; }
+.markdown-section h3 { color: var(--heading-h3-color); font-size: 1.5em; }
+.markdown-section h3 span { color: border-bottom: 1px solid white; }
+.markdown-section h4 { color: var(--heading-h-color); font-size: 1.4em; }
+.markdown-section h5 { color: var(--heading-h-color); font-size: 1.2em; }
+.markdown-section h6 { color: var(--heading-h-color); font-size: 1em; }
+.markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6 { line-height: 1.2em; font-weight: initial; }
+/* >>> Scrollbar GUI */
+.sidebar::-webkit-scrollbar { width: 4px; }
+.sidebar::-webkit-scrollbar-thumb { background: transparent; /* border-radius: 4px; */ }
+.sidebar:hover::-webkit-scrollbar-thumb { background: rgba(52,67,75,1); }
+.sidebar:hover::-webkit-scrollbar-track { background: rgba(52,67,75,0.2); }
+
+/* >>> Top Navigation */
+.app-nav { margin-top: 20px; }
+
+/* >>> Sidebar */
+.sidebar-nav > ul { padding: 0 10px; }
+.sidebar-nav ul a { margin-left:10px; padding-left: 0px; }
+.app-sub-sidebar li, .app-sub-sidebar li a { margin: 0; padding-left: 5px; }
+.sidebar .search input { width: 100%; margin: 0 0; }
+
+/* >>> Pages tweaks */
+#frameworks ~ ul, #modules ~ ul, #css ~ ul, #grid ~ ul { list-style: none; padding: var(--no-padding); }
+a[title=download] i, a[title=disabled] i { margin-right: 6px; vertical-align: middle; }
+a[title=download]:hover, .app-nav a[title=download]:hover { color: var(--link-color-hover); }
+a[title=disabled], .app-nav a[title=disabled] { color: var(--link-disabled); text-decoration-line: line-through; }
+a[title=disabled]:hover, .app-nav a[title=disabled]:hover { color: var(--alert); text-decoration-line: line-through; }
+.app-nav a[title=download] { color: var(--base-color); }
+
+
+body .docsify-copy-code-button, body .docsify-copy-code-button::after { background: var(--code)}
+
+/* >>> Warnings Blockquotes */
+.markdown-section .alert { position: relative; margin: 2em 0; padding: var(--notice-padding); border-width: var(--notice-border-width, 0); border-style: var(--notice-border-style); border-color: var(--notice-border-color); border-radius: var(--notice-border-radius); background: var(--notice-important-background, var(--notice-background)); color: var(--notice-important-color, var(--notice-color)); font-family: var(--notice-font-family); font-weight: var(--notice-font-weight); color: var(--notice-color) }
+.markdown-section .alert:before { display: inline-block; position: var(--notice-before-position, relative); top: var(--notice-before-top); left: var(--notice-before-left); height: var(--notice-before-height); width: var(--notice-before-width); margin: var(--notice-before-margin); padding: var(--notice-before-padding); border-radius: var(--notice-before-border-radius); line-height: var(--notice-before-line-height); text-align: center; font-family: "Font Awesome 5 Free"; font-weight: 900; font-size: 1.2em; }
+
+.markdown-section .primary { border-color: var(--primary-alert);  }
+.markdown-section .primary:before { content: "\f071"; color: var(--primary-alert); }
+
+.markdown-section .secondary { border-color: var(--secondary-alert);  }
+.markdown-section .secondary:before { content: "\f06a"; color: var(--secondary-alert); }
+
+.markdown-section .help { border-color: var(--help-alert);  }
+.markdown-section .help:before { content: "\f059"; color: var(--help-alert); }
+
+.markdown-section .bug { border-color: var(--secondary-alert);  }
+.markdown-section .bug:before { content: "\f188"; color: var(--secondary-alert); }
+
+.markdown-section .info { border-color: var(--help-alert);  }
+.markdown-section .info:before { content: "\f05a"; color: var(--help-alert); }
+
+.markdown-section .code { border-color: var(--primary-alert);  }
+.markdown-section .code:before { content: "\f121"; color: var(--primary-alert); } /* f1c9 */
+
+.fa-exclamation, .fa-bug { color: var(--primary-alert)}
+.fa-wrench { color: var(--secondary-alert)}
+.fa-broom { color: var(--info-alert)}
+
+#main > table.tweak > thead:nth-child(2) { background-color: var(--table-cell-border-color); }
+
+
+
+/* #main > .tweak > tbody > tr:nth-child(1) > td > strong { color: var(--mono-shade2) }
+#main > table.tweak.fw > tbody > tr:nth-child(1) { background-color: var(--table-cell-border-color); } */
+.fw, .fw thead, .fw tbody, .fw tr { width: 100%; text-align: right !important; }
+.markdown-section .tweak.fw
+.markdown-section .tweak.fw td { width: 100% !important; }
+.markdown-section .tweak.fw td:not(:first-child):not(:last-child) { border-left: 1px solid var(--table-cell-border-color); }
+.markdown-section .tweak.fw td:last-child { border-left: 1px solid var(--table-cell-border-color); }
+.markdown-section .tweak { padding-bottom: 3em; }
+/* #main > table.tweak.fw > tbody > tr:last-child { border-bottom: 2px dashed var(--table-cell-border-color); } */
+
+
+
+#main > pre { }
+/* #main > p { left: 11em; } */
+
+
+
+
+
+
+.cover-main h1 span { font-family:var(--code-font-family) }
+
+
+
+.example { margin-left: 10px; margin-right: 5px; }
+
+
+
+.markdown-section video { margin-top: 20px; }
