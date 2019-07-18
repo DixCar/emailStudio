@@ -137,7 +137,7 @@ body .docsify-copy-code-button, body .docsify-copy-code-button::after { backgrou
 
 
 
-.cover-main h1 span { font-family:var(--code-font-family) }
+.cover-main h1 span { font-family:var(--base-font-family) }
 
 
 

@@ -1,25 +1,3 @@
-* [![Current version](https://img.shields.io/badge/V-2.8-E51639.svg?longCache=true&style=for-the-badge)](#)
-* Source
- * [<i class="fas fa-fw fa-cloud-download-alt"></i> SharePoint](https://dixonsretail.sharepoint.com/sites/emailcrm/Shared%20Documents/_Assets/__Templates/Adobe%20Campaign/Master%20Template?csf=1 'download')
- * [<i class="fas fa-fw fa-code-branch"></i> BitBucket](https://bitbucket.org/dixonscarphone/master-templates/src 'download')
-* Frameworks
- * [<i class="fas fa-fw fa-file-download"></i>Currys Frame](https://dixonsretail.sharepoint.com/sites/emailcrm/Shared%20Documents/_Assets/__Templates/Adobe%20Campaign/Master%20Template/AC_Skeleton_Currys.html?csf=1 'download')
- * [<i class="fas fa-fw fa-file-download"></i>PCWorld Frame](https://dixonsretail.sharepoint.com/sites/emailcrm/Shared%20Documents/_Assets/__Templates/Adobe%20Campaign/Master%20Template/AC_Skeleton_PCWorld.html?csf=1 'download')
- * [<i class="fas fa-fw fa-file-download"></i>PCWBusiness Frame](https://dixonsretail.sharepoint.com/sites/emailcrm/Shared%20Documents/_Assets/__Templates/Adobe%20Campaign/Master%20Template/AC_Skeleton_PCWBusiness.html?csf=1 'download')
- * [<i class="fas fa-fw fa-times"></i>iD Mobile](# 'disabled')
- * [<i class="fas fa-fw fa-times"></i>TeamKnowHow](# 'disabled')
- * [<i class="fas fa-fw fa-times"></i>DixonsTravel](# 'disabled')
- * [<i class="fas fa-fw fa-times"></i>CarphoneWarehouse](# 'disabled')
-* Modules
- * [<i class="fas fa-fw fa-file-download"></i>Currys PCWorld](https://dixonsretail.sharepoint.com/sites/emailcrm/Shared%20Documents/_Assets/__Templates/Adobe%20Campaign/Master%20Template/AC_Sections_CPCW.html?csf=1 'download')
- * [<i class="fas fa-fw fa-file-download"></i>PCWBusiness](https://dixonsretail.sharepoint.com/sites/emailcrm/Shared%20Documents/_Assets/__Templates/Adobe%20Campaign/Master%20Template/AC_Sections_PCWBusiness.html?csf=1&e=6a3403629d8740949ef87c5ba6f963af 'download')
- * [<i class="fas fa-fw fa-file-download"></i>VML](https://dixonsretail.sharepoint.com/sites/emailcrm/Shared%20Documents/_Assets/__Templates/Adobe%20Campaign/Master%20Template/AC_VML.html?csf=1&e=6a3403629d8740949ef87c5ba6f963af 'download')
-* Grid
- * [<i class="fas fa-fw fa-times"></i>Framework](# 'disabled')
- * [<i class="fas fa-fw fa-times"></i>mBNR](# 'disabled')
- * [<i class="fas fa-fw fa-times"></i>TEXT](# 'disabled')
- * [<i class="fas fa-fw fa-times"></i>1 COLUMN](# 'disabled')
- * [<i class="fas fa-fw fa-times"></i>2 COLUMN](# 'disabled')
- * [<i class="fas fa-fw fa-times"></i>3 COLUMN](# 'disabled')
- * [<i class="fas fa-fw fa-times"></i>4 COLUMN](# 'disabled')
- * [<i class="fas fa-fw fa-times"></i>Snippets](# 'disabled')
+* [![Current version](https://img.shields.io/badge/Version-1.0-E51639.svg?longCache=true&style=for-the-badge)](#)
+* [<i class="fas fa-fw fa-cloud-download-alt"></i> SharePoint](https://dixonsretail.sharepoint.com/:f:/s/emailcrm/Eqp2bqgsM65IhMxuKEBCO8QBY89SzMURUP3K8sGd6NXbQw?e=d4CzBR 'download')
+* [<i class="fab fa-github"></i> GitHub](https://github.com/DixCar/emailStudio 'download')
