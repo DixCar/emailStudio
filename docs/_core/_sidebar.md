@@ -3,7 +3,7 @@
 - [Workflow](workflow.md)
 - [WebTools](webtools.md)
 
-- [JS Snippets](jssnippets.md)
+- [Snippets](snippets.md)
 - **<i class="fas fa-book"></i> Resources**
 - [Useful links](useful-links.md)
 - [Markdown](markdown.md)
