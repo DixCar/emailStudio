@@ -2,7 +2,7 @@ p> WebM format used to video tutorials is not supported on iE or Safari browser 
 
 ## Libraries
 
-### Import object with 'layers'
+#### Import object with 'layers'
 
 <video controls pause style="max-width: 50%; height: auto; margin: 10 0 auto;">
   <source src="_media/webm/test.webm">

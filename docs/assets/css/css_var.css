@@ -1,26 +1,26 @@
 :root {
-  --theme: #60727b;
-  --base-color: #698290;
+--theme: #60727b;
+--base-color: #698290;
 --red: #E51639;
 
-  --sb-link-1: #35B1FF; --sb-link-2: #FF7070; --sb-link-3: #08B29E;
+--sb-link-1: #35B1FF; --sb-link-2: #FF7070; --sb-link-3: #08B29E;
 --code: #35B1FF;
-     --bg: #F4F4F4;
-    --txt: #FFC447;
-   --link: #FF7070; /* links only */
+--bg: #F4F4F4;
+--txt: #FFC447;
+--link: #FF7070; /* links only */
 
-   --info: #2AC98F; /* such a tips and advice */
-  --alert: #FF7070; /* important things */
+--info: #2AC98F; /* such a tips and advice */
+--alert: #FF7070; /* important things */
 
-    --off: #D3C9B3; /* disable and icons */
- --border: #EFEFEF; /* also <hr> */
- --gutter: #DDDDDD; /* to make split for 'sudo 2 columns' in table */
- --strong-color: #9cbaca;
+--off: #D3C9B3; /* disable and icons */
+--border: #EFEFEF; /* also <hr> */
+--gutter: #DDDDDD; /* to make split for 'sudo 2 columns' in table */
+--strong-color: #9cbaca;
 
 /* >>> Warnings Blockquotes */
 
     /* big contrast */
-    --primary-alert--     :#FFAA19;
+         :#FFAA19;
     --secondary-alert--   :#E51639;
     --help-alert--        :#16E5C3;
     --bug-alert--         :#E51639;
@@ -50,23 +50,23 @@
 
 
 /* Tab blocks */
-    --docsifytabs-border-color          : #ededed;
-    --docsifytabs-border-px             : 1px;
-    --docsifytabs-border-radius-px      : ;
-    --docsifytabs-margin                : 1.5em 0;
+--docsifytabs-border-color          : var(--table-row-odd-background);
+--docsifytabs-border-px             : 1px;
+--docsifytabs-border-radius-px      : 0px;
+--docsifytabs-margin                : 1.5em 0;
 
-    /* Tabs */
-    --docsifytabs-tab-background        : #f8f8f8;
-    --docsifytabs-tab-background--active: var(--docsifytabs-content-background);
-    --docsifytabs-tab-color             : #999;
-    --docsifytabs-tab-color--active     : inherit;
-    --docsifytabs-tab-highlight-px      : 3px;
-    --docsifytabs-tab-highlight-color   : var(--theme-color, currentColor);
-    --docsifytabs-tab-padding           : 0.6em 1em;
+/* Tabs */
+--docsifytabs-tab-background        : var(--table-row-odd-background);
+--docsifytabs-tab-background--active: ;
+--docsifytabs-tab-color             : var(--border);
+--docsifytabs-tab-color--active     : var(--heading-h1-color);
+--docsifytabs-tab-highlight-px      : 3px;
+--docsifytabs-tab-highlight-color   : var(--heading-h1-color);
+--docsifytabs-tab-padding           : 0.6em 1em;
 
-    /* Tab content */
-    --docsifytabs-content-background    : inherit;
-    --docsifytabs-content-padding       : 0.5rem 1.75rem;
+/* Tab content */
+--docsifytabs-content-background    : ;
+--docsifytabs-content-padding       : 0.5rem 1.75rem;
 }
 /* >>> Content */
 .content > .markdown-section { width: 94% !important; }
