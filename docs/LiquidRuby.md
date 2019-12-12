@@ -15,16 +15,6 @@ create editable tag with the field to unlock WYSWIG Editor
 
 
 
-
-
-
-
-
-
-
-
-
-
 ### Add drop down for text area to change text size
 
 ![alt text](//currys-ssl.cdn.dixons.com/css/themes/email/LAB/EmailStudioGuide/v1/DROPDOWN_text_size.PNG "")
