@@ -1,1 +1,1 @@
-- [Liquid Ruby](examples.md)
+- [Examples](examples.md)
