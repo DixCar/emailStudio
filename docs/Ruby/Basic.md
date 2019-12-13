@@ -128,3 +128,47 @@ You can wrap a `<module>` tag around any html you like and not all of the html n
 > Modules also have `name=""`, `label=""` and `hint=""` as attributes.
 
 > You can let editors manipulate how modules are displayed using `Modulezones`.
+
+#### The `<modulezone>` tag
+
+A modulezone is part of an email where the editor can add modules from a set defined in the template. Once modules are added they can be hidden or re-ordered.
+
+In the template HTML a `<modulezone>` tag is used to create a modulezone. Like an `<editable>` or a `<module>` tag, a `<modulezone>` tag must have a `name=` attribute, `label=` is recommended and `hint=` can be used if necessary.
+
+Inside the `<modulezone>` tag a collection of modules is built using `<module>` tags.
+
+``` html
+<modulezone name="maincontent" label="Main Content Area">
+ <module name="heromodule" label="Hero Image with text">
+ ...
+ </module>
+ <module name="oneproduct" label="One Product Module">
+ ...
+ </module>
+ <module name="twoproduct" label="Two Product Module">
+ ...
+ </module>
+</modulezone>
+```
+
+> All modulezones in a template must have a unique name attribute.
+
+> All modules within a modulezone must have a unique name attribute (but you can have two modules with the same name, as long as they're in separate modulezones)
+
+> The first child tag within a `<modulezone>` should always be a `<module>` tag. Any HTML within a `<modulezone>` tag that isn't wrapped in a `<module>` tag will be removed.
+
+> `<modulezone>` and `<module>` tags should be either before or after table structure tags, not inside them.
+>
+>For example:
+>
+>```
+><table><tr><td><modulezone><module><table><tr><td>
+>```
+>instead of
+>```
+>...</tr><modulezone><module><tr><td>
+>```
+
+> The label attribute from a `<module>` (or name attribute if there is no label) is used in the dropdown menu for adding modules in the modulezone editor.
+
+> When an editor starts a new mailing, the modulezone is always empty.
