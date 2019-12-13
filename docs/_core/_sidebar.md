@@ -1,4 +1,5 @@
-- [Syntax](Ruby/Basic.md)
+- [Basic Syntax](Ruby/Basic.md)
+- [Advanced Syntax](Ruby/Basic.md)
 - [Examples](Ruby/Examples.md)
 - [Links](Ruby/Links.md)
 

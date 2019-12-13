@@ -161,14 +161,20 @@ Inside the `<modulezone>` tag a collection of modules is built using `<module>` 
 >
 >For example:
 >
->```
+>```html
 ><table><tr><td><modulezone><module><table><tr><td>
 >```
 >instead of
->```
+>```html
 >...</tr><modulezone><module><tr><td>
 >```
 
 > The label attribute from a `<module>` (or name attribute if there is no label) is used in the dropdown menu for adding modules in the modulezone editor.
 
 > When an editor starts a new mailing, the modulezone is always empty.
+
+##### Considerations when building with `<modulezone>`
+
+A template can be built as one big modulezone, but this often provides a bad user experience. Often it's better to have a modulezone for header modules at the top of the email, then a series of content modules in a main modulezone. By taking this approach you can ensure that the design of the email isn't compromised by ill-advised module choices by a user.
+
+You can still use `<module>` tags outside a modulezone. Those modules will be fixed and can't be removed or re-ordered by the editor.
