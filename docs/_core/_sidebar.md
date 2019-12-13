@@ -1,5 +1,8 @@
+- [Syntax](Ruby/Basic.md)
 - [Examples](Ruby/Examples.md)
+- [Links](Ruby/Links.md)
 
+- [Links](downloads.md)
 
 
 <!-- - [Rich Text Editor WYSIWYG](RichTextEditorWYSIWYG.md)
