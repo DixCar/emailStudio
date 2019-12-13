@@ -1,20 +1,22 @@
-### Text Align by WYSWIG Editor
-
-![alt text](//currys-ssl.cdn.dixons.com/css/themes/email/LAB/EmailStudioGuide/v1/WYSWIG_text_align.PNG "")
-
+### Text Align
 
 <!-- tabs:start -->
 
 #### ** Basic **
 
-Set default align value and turn on WYSWIG:
+Left, Center, Right
+
+![alt text](//currys-ssl.cdn.dixons.com/css/themes/email/LAB/EmailStudioGuide/v1/WYSWIG_text_align.PNG "")
+
+Set default align value and turn on the WYSIWYG widget:
 ``` html
 align="center" replace-align="{{editables.headline.align}}"
 ```
 where:
-`editables` and `align` turn on the widget
 
-`headline` pointing `<editable>` name/label
+`editables` and `align` turned on the widget
+
+`headline` identifying name/label on `<editable>` tag
 ```html
 <editable name="headline" label="headline">
 ```
@@ -25,7 +27,7 @@ Simple example:
 ```
 
 #### ** HTML **
-This is whole module example
+Example of module
 ```html
 <module name="CB02" label="CB02 - Header text">
   <field type="number" name="padTop" label="Outer Padding - Top" default="20"></field>
@@ -74,45 +76,43 @@ N/A
 <!-- tabs:end -->
 
 
-#### To add Rich Text
+
+
+
+
+
+
+
+
+### Text Styling
+
+<!-- tabs:start -->
+
+#### ** Basic **
+
+Subscript, Superscript, Bold, Italic, Smart Item (personalisation link)
 
 ![alt text](//currys-ssl.cdn.dixons.com/css/themes/email/LAB/EmailStudioGuide/v1/WYSWIG_rich_text.PNG "")
 
-Requires:
+Turn on the WYSIWYG widget and options:
+``` html
+type="rich" allow-styles="subscript superscript bold italic link personalisation
 ```
+where:
+
+`type="rich"` turned on the widget
+
+`allow-styles="subscript superscript bold italic link personalisation"` set available options
+
+Simple example:
+```html
 <field type="rich" allow-styles="subscript superscript bold italic link personalisation" name="content" label="Headline text"></field>
 <content replace="{{content}}">THE DEALS ARE TOO GOOD TO MISS</content>
 ```
 
-
-### Add drop down for text area to change text size
-
-![alt text](//currys-ssl.cdn.dixons.com/css/themes/email/LAB/EmailStudioGuide/v1/DROPDOWN_text_size.PNG "")
-
-Build with classes to tweak the font size 'fzXX' where XX will be replaced to switch font-size
-
-Requires:
-`class="fz40" replace-class="fz{{editables.headline.mTextsize}}"` for mobile
-`replace-style` for desktop version
-
-```css
-<style type="text/css">
-  .fz9 { font-size: 9px!important; }
-  .fz20 { font-size: 20px!important; }
-  .fz22 { font-size: 22px!important; }
-  .fz25 { font-size: 25px!important; }
-  .fz30 { font-size: 30px!important; }
-  .fz32 { font-size: 32px!important; }
-  .fz35 { font-size: 35px!important; }
-  .fz40 { font-size: 40px!important; }
-  .fz75 { font-size: 75px!important; }
-  .fz80 { font-size: 80px!important; }
-  .fz90 { font-size: 90px!important; }
-  .fz95 { font-size: 95px!important; }
-</style>
-```
-
-```
+#### ** HTML **
+Example of module
+```html
 <module name="CB02" label="CB02 - Header text">
   <field type="number" name="padTop" label="Outer Padding - Top" default="20"></field>
   <field type="number" name="padBottom" label="Outer Padding - Bottom" default="20"></field>
@@ -176,59 +176,7 @@ Requires:
 </module>
 ```
 
-### Add count character to CTA
+#### ** CSS **
+N/A
 
-<video controls pause style="max-width: 50%; height: auto; margin: 10 0 auto;">
-  <source src="http://currys-ssl.cdn.dixons.com/css/themes/email/LAB/EmailStudioGuide/v1/CTA_character_count.webm">
-  Your browser does not support the video tag.
-</video>
-
-
-This will not work with numbers only (e.g. voucher code) but it works with mixed letters and numbers and must start with letter (see video above)
-
-It will replace text when is longer than XX
-
-Requires:
-`replace="{% if text.size > 14 %}too much text{% else %}{{text}}{% endif %}"`
-`<field type="text" name="text" hint="14 character limit recommendation to keep the text on one line" default="CTA"></field>`
-
-
-
-```
-<module name="CB04" label="CB04">
-  <field type="text" name="padTop" label="Outer Padding - Top (just number)" default="10"></field>
-  <field type="text" name="padBottom" label="Outer Padding - Bottom (just number)" default="10"></field>
-  <table role="presentation" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
-    <tr>
-      <td>
-        <table role="presentation" width="650" align="center" cellspacing="0" cellpadding="0" border="0" class="fw">
-          <tr>
-            <td style="padding: 10px 0px 10px 0px;" replace-style="padding:{{padTop}}px 0px {{padBottom}}px 0px;">
-              <table role="presentation" width="100%" class="container" border="0" cellpadding="0" cellspacing="0" align="center">
-                <tr>
-                  <td align="center" class="x-60">
-                    <!-- $$ 1x CTA ¬ set: link, tracking, bgcolort -->
-                    <table role="presentation" width="190" class="noBG" border="0" cellpadding="0" cellspacing="0" align="center">
-                      <tr>
-                        <td height="40" valign="middle" align="center" bgcolor="#00224f;" replace-bgcolor="{{editables.cta.ctacol}}" class="noBG hA">
-                          <editable name="cta" label="CTA">
-                            <field type="text" name="text" hint="14 character limit recommendation to keep the text on one line" default="CTA"></field>
-                            <field type="color" allow-custom="true" name="ctacol" label="CTA background colour" default="#00224f" hint="Select CTA background colour by clicking on the colour picker or pasting a HEX code with the hashtag"> </field>
-                            <field type="color" name="ctaTXTcol" label="CTA text colour" default="#ffffff"></field>
-                            <field type="number" name="ctasize" label="CTA text size" default="18"></field>
-                            <field type="href" name="href" label="Link URL" default="https://www.carphonewarehouse.com/"></field>
-                            <a href="https://www.carphonewarehouse.com/" replace-href="{{href}}" replace="{% if text.size > 14 %}too much text{% else %}{{text}}{% endif %}" style="background-color:#00224f; border-radius:3px; color:#ffffff; display:block; font-family:Arial, Helvetica, sans-serif; font-weight: bold; font-size:18px; line-height:40px; text-align:center; text-decoration:none; -webkit-text-size-adjust:inherit;" replace-style="background-color:{{ctacol}}; border-radius:3px; color:{{ctaTXTcol}}; display:block; font-family:Arial, Helvetica, sans-serif; font-weight: bold; font-size:{{ctasize}}px;line-height:40px; text-align:center; text-decoration:none; -webkit-text-size-adjust:inherit;">CTA</a> </editable>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
-</module>
-```
+<!-- tabs:end -->
