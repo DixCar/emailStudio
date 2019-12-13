@@ -10,7 +10,7 @@
 </module>
 ```
 
-The `<editable>` tag
+#### The `<editable>` tag
 
 Wrap an `<editable>` tag around the content you wish to make editable. The editable tag should be around the content but should not include any formatting. CMS recognises standard HTML tags and adds fields in the editor as necessary - you can wrap editable tags around text, links or images (or linked images if you're fancy).
 Editable tags should not be nested within one another.
@@ -59,14 +59,15 @@ CMS will provide fields for the image source, height, width and alt text. The ed
 
 If you wrap an editable tag around an `<a>` tag that contains (only) an `<img>`, then CMS will provide both the link and image fields, plus a button to remove the link if required.
 
-<!-- tabs:end -->
-
-##### Anything else
+#### ** Anything else **
 
 If you wrap an editable tag around code that CMS doesn't understand, or multiples of the above (eg. Text and an image) then CMS will make all of that code editable in a paragraph field.
 
+<!-- tabs:end -->
 
-#### **`Name`**, **`labels`** and **`hints`**
+
+
+#### The Attributes `name`, `label` and `hint`
 
 ```html
 <editable name="headline" label="Main Headline" hint="Please ensure you use sentence case only"></editable>
@@ -107,9 +108,15 @@ Try to keep hints short, to avoid adding clutter to the interface.
 <!-- tabs:end -->
 
 
-#### The **`<module>`** tag
+#### The `<module>` tag
 
 All editable tags must be contained within a module tag. Module tags are used to group together editables in a way that makes sense for an editor, for example all of the navigation elements, or a block with an image, a headline and a CTA button.
+
+``` html
+<module name="module1" label="Module with a headline">
+...
+</module>
+```
 
 > `<module>` is an html tag and it has to be used semantically - otherwise CMS wouldn't know if an editable was inside it or not.
 You can wrap a `<module>` tag around any html you like and not all of the html needs to be inside module tags.
@@ -120,4 +127,4 @@ You can wrap a `<module>` tag around any html you like and not all of the html n
 
 > Modules also have `name=""`, `label=""` and `hint=""` as attributes.
 
-> Spoiler alert! You can let editors manipulate how modules are displayed using `Modulezones`.
+> You can let editors manipulate how modules are displayed using `Modulezones`.

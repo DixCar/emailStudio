@@ -1,3 +1,4 @@
+li.active > a { background-color: var(--code-inline-background) !important; }
 .progress { position: fixed; z-index: 60; top: 0; left: 0; right: 0; height: 3px; width: 0; background-color: var(--theme-color); transition:width var(--duration-fast), opacity calc(var(--duration-fast) * 2)
 }
 body.ready-transition:after, body.ready-transition>*:not(.progress) { opacity: 0; transition: opacity var(--spinner-transition-duration) }
@@ -69,7 +70,7 @@ pre[data-lang]::selection, pre[data-lang] ::selection, code[class*="lang-"]::sel
 .markdown-section blockquote p:first-child:after { content: var(--blockquote-quotes-close); margin-left: 0.15em; vertical-align: -0.55em }
 .markdown-section blockquote p:last-child { margin-bottom: 0 }
 .markdown-section code { font-family: var(--code-font-family); font-size: var(--code-font-size); font-weight: var(--code-font-weight); line-height: inherit }
-.markdown-section code:not([class*="lang-"]):not([class*="language-"]) { margin: var(--code-inline-margin); padding: var(--code-inline-padding); border-radius: var(--code-inline-border-radius); background: var(--code-inline-background); color: var(--code-inline-color-tweak, currentColor); white-space: nowrap }
+.section-link code, .markdown-section code:not([class*="lang-"]):not([class*="language-"]) { margin: var(--code-inline-margin); padding: var(--code-inline-padding); border-radius: var(--code-inline-border-radius); background: var(--code-inline-background); color: var(--code-inline-color-tweak, currentColor); white-space: nowrap }
 .markdown-section h1:first-child, .markdown-section h2:first-child, .markdown-section h3:first-child, .markdown-section h4:first-child { margin-top: 0 }
 .markdown-section h1+h2, .markdown-section h1+h3, .markdown-section h1+h4, .markdown-section h2+h3, .markdown-section h2+h4, .markdown-section h3+h4 { margin-top: 1rem }
 .markdown-section h1 { margin: var(--heading-h1-margin, var(--heading-margin)); padding: var(--heading-h1-padding, var(--heading-padding)); border-width: var(--heading-h1-border-width, 0); border-style: var(--heading-h1-border-style); border-color: var(--heading-h1-border-color); font-family: var(--heading-h1-font-family, var(--heading-font-family)); font-size: var(--heading-h1-font-size); font-weight: var(--heading-h1-font-weight, var(--heading-font-weight)); line-height: var(--base-line-height); color: var(--heading-h1-color, var(--heading-color)) }

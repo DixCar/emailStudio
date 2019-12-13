@@ -69,7 +69,7 @@ pre[data-lang]::selection, pre[data-lang] ::selection, code[class*="lang-"]::sel
 .markdown-section { position: relative; max-width: var(--content-max-width); margin: 0 auto; padding: 2rem 45px }
 .app-nav:not(:empty) ~ main .markdown-section { padding-top: 3.5rem }
 .markdown-section figure, .markdown-section p, .markdown-section ol, .markdown-section ul { margin: 1em 0 }
-.markdown-section ol, .markdown-section ul { padding-left: 1.5rem }
+.markdown-section ol, .markdown-section ul, .section-link code { padding-left: 1.5rem }
 .markdown-section ol ol, .markdown-section ol ul, .markdown-section ul ol, .markdown-section ul ul { margin-top: 0.15rem; margin-bottom: 0.15rem }
 .markdown-section a { border-bottom: var(--link-border-bottom); color: var(--link-color); text-decoration: var(--link-text-decoration); text-decoration-color: var(--link-text-decoration-color) }
 .markdown-section a:hover { border-bottom: var(--link-border-bottom--hover, var(--link-border-bottom, 0)); color: var(--link-color--hover, var(--link-color)); text-decoration: var(--link-text-decoration--hover, var(--link-text-decoration)); text-decoration-color: var(--link-text-decoration-color--hover, var(--link-text-decoration-color)) }
