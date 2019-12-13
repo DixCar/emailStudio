@@ -1,29 +1,31 @@
-### Limit character for CTA
+### Background and Text Colours (#HEX)
 
 <!-- tabs:start -->
 
 #### ** Basic **
 
-Set max limit character for CTA
+Allowing to change Background Colour and Text Colour by #HEX or Colour Picker
 
-<video controls pause style="max-width:100%; min-width:50%; height: auto; margin: 10 0 auto;">
-  <source src="http://currys-ssl.cdn.dixons.com/css/themes/email/LAB/EmailStudioGuide/v1/CTA_character_count.webm">
-  Your browser does not support the video tag.
-</video>
+![ColourHEX](https://user-images.githubusercontent.com/32497506/70802338-21162780-1da9-11ea-9031-469a642cad7e.PNG)
 
-<i class="fas fa-fw fa-bug"></i> Only works if the text starts with a letter (if only numbers are used, the function will not work - see video above on full screen)
 
 ``` html
-<field type="text" name="text" hint="14 character limit recommendation to keep the text on one line" default="CTA"></field>
-<a replace="{% if text.size > 14 %}too much text{% else %}{{text}}{% endif %}">CTA</a>
+<td bgcolor="#00224f;" replace-bgcolor="{{editables.cta.ctacol}}">
+  <field type="color" allow-custom="true" name="ctacol" label="CTA background colour" default="#00224f" hint="Select CTA background colour by clicking on the colour picker or pasting a HEX code with the hashtag"> </field>
+  <field type="color" name="ctaTXTcol" label="CTA text colour" default="#ffffff"></field>
+  <a style="background-color:#00224f;" replace-style="background-color:{{ctacol}}; color:{{ctaTXTcol}};">CTA</a>
+
 ```
 
 where:
 
-`default="CTA"` default text value
+`bgcolor="#00224f;"` and `default="#00224f"` and `style="background-color:#00224f;"` default values
 
-`replace="{% if text.size > 14 %}too much text{% else %}{{text}}{% endif %}"` will change text on CTA if hit more than 14 characters
+`replace-bgcolor="{{editables.cta.ctacol}}"` and `replace-style="background-color:{{ctacol}}; color:{{ctaTXTcol}};"` variables
 
+`allow-custom="true"` turn on the widget
+
+`name="ctacol"` and `name="ctaTXTcol"` pointers
 
 #### ** HTML **
 Example of module

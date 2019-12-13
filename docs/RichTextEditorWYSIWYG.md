@@ -70,18 +70,7 @@ Example of module
 </module>
 ```
 
-#### ** CSS **
-N/A
-
 <!-- tabs:end -->
-
-
-
-
-
-
-
-
 
 
 ### Text Styling
@@ -175,8 +164,5 @@ Example of module
   </table>
 </module>
 ```
-
-#### ** CSS **
-N/A
 
 <!-- tabs:end -->
