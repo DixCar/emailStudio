@@ -1,4 +1,6 @@
 - [Basic Syntax](Ruby/Basic.md)
 - [Advanced Syntax](Ruby/Advanced.md)
+- [Snippets](Ruby/Snippets.md)
 - [Examples](Ruby/Examples.md)
 - [Links](Ruby/Links.md)
+- [MD](_markdown.md)

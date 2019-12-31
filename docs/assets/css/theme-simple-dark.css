@@ -82,7 +82,7 @@ pre[data-lang]::selection, pre[data-lang] ::selection, code[class*="lang-"]::sel
 .markdown-section kbd { display: inline-block; min-width: var(--kbd-min-width); margin: var(--kbd-margin); padding: var(--kbd-padding); border: var(--kbd-border); border-radius: var(--kbd-border-radius); background: var(--kbd-background); font-family: inherit; font-size: var(--kbd-font-size); text-align: center; letter-spacing: 0; line-height: 1; color: var(--kbd-color) }
 .markdown-section kbd+kbd { margin-left: -0.15em }
 .markdown-section table { display: block; overflow: auto; margin: 1rem 0; border-spacing: 0; border-collapse: collapse }
-.markdown-section th, .markdown-section td { padding: var(--table-cell-padding); text-align: left }
+.markdown-section th, .markdown-section td { padding: var(--table-cell-padding); /*text-align: left*/ }
 .markdown-section thead { border-color: var(--table-head-border-color); border-style: solid; border-width: var(--table-head-border-width, 0); background: var(--table-head-background) }
 .markdown-section th { font-weight: var(--table-head-font-weight); color: var(--strong-color) }
 .markdown-section td { border-color: var(--table-cell-border-color); border-style: solid; border-width: var(--table-cell-border-width, 0) }
@@ -101,7 +101,7 @@ pre[data-lang]::selection, pre[data-lang] ::selection, code[class*="lang-"]::sel
 .markdown-section .table-wrapper tr { border-color: var(--table-cell-border-color); border-style: solid; border-width: var(--table-cell-border-width, 0); padding: var(--table-cell-padding) }
 .markdown-section .table-wrapper tr:not(:last-child) { border-bottom: 0 }
 .markdown-section .table-wrapper td { display: -ms-flexbox; display: flex; padding: 0.15em 0 }
-.markdown-section .table-wrapper td::before { display: block; min-width: 8em; max-width: 8em; font-weight: bold; text-align: left }
+.markdown-section .table-wrapper td::before { display: block; min-width: 8em; max-width: 8em; font-weight: bold; /*text-align: left*/ }
 }
 /* .markdown-section .tip, .markdown-section .warn, .markdown-section .info, .markdown-section .light { position: relative; margin: 2em 0; padding: var(--notice-padding); border-width: var(--notice-border-width, 0); border-style: var(--notice-border-style); border-color: var(--notice-border-color); border-radius: var(--notice-border-radius); background: var(--notice-background); font-family: var(--notice-font-family); font-weight: var(--notice-font-weight); color: var(--notice-color) } */
 /* .markdown-section .tip:before, .markdown-section .warn:before, .markdown-section .info:before, .markdown-section .light:before { display: inline-block; position: var(--notice-before-position, relative); top: var(--notice-before-top); left: var(--notice-before-left); height: var(--notice-before-height); width: var(--notice-before-width); margin: var(--notice-before-margin); padding: var(--notice-before-padding); border-radius: var(--notice-before-border-radius); line-height: var(--notice-before-line-height); font-family: var(--notice-before-font-family); font-size: var(--notice-before-font-size); font-weight: var(--notice-before-font-weight); text-align: center } */
