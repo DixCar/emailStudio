@@ -1,12 +1,12 @@
 ## Special Characters
 
-Setup for `{{content|replace: 'ABC', 'XYZ'}}` making possible to use special characters in rich-text editor
+`{{content|replace: 'ABC', 'XYZ'}}` making possible to use special characters in rich-text editor
 
 <!-- tabs:start -->
 
 #### ** Snippet setup **
 
-This example is using `|replace:` function to find any string contained `'~TEXT~'`, and replace it with `'ENCODED-HTML'`
+Use `|replace:` function to find **any** string that contained `'~TEXT~'`, and replace it all with `'ENCODED-HTML'`
 
 
 ``` html
@@ -37,9 +37,25 @@ This example is using `|replace:` function to find any string contained `'~TEXT~
 | &hellip;  | `~HELLIP~`  | `&hellip;` | horizontal ellipsis |
 | &rarr;    | `~RARR~`    | `&rarr;` | rightwards arrow |
 
+<!-- tabs:end -->
 
-```html
 
+## Module Padding
+
+Use this snippet to add editable `padding-top` and `padding-bottom` within module (parent level)
+
+<!-- tabs:start -->
+
+#### ** Snippet setup **
+
+Use `<fields>` to define editable fields for module and add `style` and `replace-style` to tag where padding is apply - in this case is `<td>`
+
+``` html
+<field type="number" name="moduleTopPad" label="Set the 'padding-top' value" hint="Use numbers only (default = 25)" default="25"></field>
+<field type="number" name="moduleBottomPad" label="Set the 'padding-bottom' value" hint="Use numbers only (default = 25)" default="25"></field>
+...
+<td class="modPAD" style="padding-top:25px; padding-bottom:25px;" replace-style="padding-top:{{moduleTopPad}}px; padding-bottom:{{moduleBottomPad}}px;">
 ```
+
 
 <!-- tabs:end -->
