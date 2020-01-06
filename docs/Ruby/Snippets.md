@@ -39,9 +39,9 @@ All supported list of characters
 | &gt;   | `~GT~`     | `&gt;` | greater-than sign (chevron) |
 
 
-#### ** Depreciated Characters **
+#### ** Other Characters **
 
-<i class="fas fa-fw fa-broom"></i> Depreciated list of characters. Seams to be fine to use below characters in way of a copy-and-paste as CMS supports UTF-8 characters
+<i class="fas fa-fw fa-broom"></i> Seams to be fine to use below characters in way of a copy-and-paste as CMS supports UTF-8 characters
 
 | COPY | COMMENTS |
 |:-:|:-|
