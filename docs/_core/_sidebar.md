@@ -3,4 +3,3 @@
 - [Snippets](Ruby/Snippets.md)
 - [Examples](Ruby/Examples.md)
 - [Links](Ruby/Links.md)
-- [MD](_markdown.md)
