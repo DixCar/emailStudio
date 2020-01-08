@@ -1,4 +1,4 @@
-## RICH TEXT EDITOR WYSIWYG
+`## RICH TEXT EDITOR WYSIWYG
 
 ### Text Align
 
@@ -878,6 +878,68 @@ Example of module
     </tr>
   </table>
 </module>
+```
+
+<!-- tabs:end -->
+
+
+
+
+## QUALITY ASSURANCE
+
+<!-- tabs:start -->
+
+#### ** Basic **
+
+### How to find the QA add-on?
+
+The best practice is to turn on the QA's add-on as last step before exporting HTML to make sure we have provided all critical information such links, labels etc. However it can be very useful tool all time during build campaign.
+
+The QA tool is default `OFF` and to turned it `ON` go to `Document Settings` and use switch button under `Quality assurance`
+
+![QA](https://user-images.githubusercontent.com/32497506/71995007-b504d300-3231-11ea-9315-65f24bdea875.PNG)
+
+
+### How it works?
+
+See below video to see the QA's add-on in action
+
+<video controls pause style="max-width:100%; min-width:50%; height: auto; margin: 10 0 auto;">
+  <source src="http://currys-ssl.cdn.dixons.com/css/themes/email/LAB/EmailStudioGuide/v1/iDM_CMS_QA_announcment.webm">
+  Your browser does not support the video tag.
+</video>
+
+
+#### ** Snippet **
+
+Put below code to the `<body>` and it will add button to the `Document Settings`
+
+```html
+<field type="checkbox" name="qa" label="Quality Assurance" default="false"/>
+```
+
+Below is example of code to add within `<module>` but it need be build in regards of each module
+
+```html
+<taxi-preview-only rule="{% remove_unless document.qa %}" class="qa">
+  <div><strong>H_P : Prolog BNR</strong>
+    <div>URL:
+      <content class="" replace-class="{% if module.href == '###link' or module.href == blank %}qa-alert{% else %}qa-ok{% endif %}" replace="{% if module.href == '###link' or module.href == blank %}[ALERT]{% else %}<div>{{ module.href }}</div>{% endif %}"></content>
+    </div>
+    <div>AC LABEL:
+      <content class="" replace-class="{% if module.aclabel == 'Block_Category' or module.aclabel == blank %}qa-alert{% else %}qa-ok{% endif %}" replace="{% if module.aclabel == 'Block_Category' or module.aclabel == blank %}[ALERT]{% else %}<div>{{ module.aclabel }}</div>{% endif %}"></content>
+    </div>
+    <div class="" replace-class="{% if imgortext == false %}qa-dN{% endif %}">ALT TEXT:
+      <content class="qa-ok" replace="{% if editables.image.alt == '' or editables.image.alt == blank %}EMPTY{% else %}{{ editables.image.alt }}{% endif %}"></content>
+    </div>
+    <div class="br"></div>
+    <div>MODULE PADDING <em>TOP</em>
+      <content class="qa-ok" replace="{{ module.moduleTopPad }}"></content>
+      <em>BOTTOM</em>
+      <content class="qa-ok" replace="{{ module.moduleBottomPad }}"></content>
+    </div>
+  </div>
+</taxi-preview-only>
 ```
 
 <!-- tabs:end -->
