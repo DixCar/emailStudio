@@ -12,20 +12,20 @@ Snippets allow us to use none friendly special characters in editable text
 
 <!-- tabs:start -->
 
-#### ** Snippet setup **
+#### ** SETUP **
 
 `|replace:` is looking for the string `'~TEXT~'` in text editor and replace it with `'ENCODED-HTML'`
 
-<i class="fas fa-fw fa-exclamation"></i> Require `default="Default Value Text"` in `<field>` tag
+<i class="fas fa-fw fa-exclamation"></i> Require `default="Default Value Text"` in `<field>` tag other way content will be empty
 
 
 ``` html
 <field type="rich" allow-styles="bold italic link superscript" name="content" default="Default Value Text"></field>
 
-<content replace="{{ content|replace: '~NBSP~', '&nbsp;'|replace: '~NBH~', '&#8209;'|replace: '~GT~', '&gt;' }}"></content>"
+<content replace="{{ content|replace: '~NBSP~', '&nbsp;'|replace: '~NBH~', '&#8209;'|replace: '~GT~', '&gt;'|replace: '~BRH~', '<br class=&quot;h&quot; /> '|replace: '~BR~', '<br /> ' }}"></content>"
 ```
 
-<i class="fas fa-fw fa-wrench"></i> Is possible to support more characters by adding another `|replace: '~TEXT~', 'ENCODED-HTML'`
+<i class="fas fa-fw fa-wrench"></i> Is possible to support more characters by adding `|replace: '~TEXT~', 'ENCODED-HTML'`
 
 
 #### ** Supported Characters **
@@ -37,6 +37,8 @@ All supported list of characters
 | &nbsp;    | `~NBSP~`    | `&nbsp;` | non-breaking space |
 | &#8209;   | `~NBH~`     | `&#8209;` | non-breaking hyphen |
 | &gt;   | `~GT~`     | `&gt;` | greater-than sign (chevron) |
+| &lt;br class="h" /&gt;   | `~BRH~`     | `<br class=&quot;h&quot; />` | adding line break and hide it on mobile view |
+| &lt;br /&gt;  | `~BR~`     | `<br />` | adding line break |
 
 
 #### ** Other Characters **
@@ -65,34 +67,6 @@ All supported list of characters
 | &rarr;    | rightwards arrow |
 
 
-<!--
-
-| EFFECT | WRITE AS | AUTO-CONVERTED | COMMENTS |
-|:-:|:-:|:-:|:-|
-| &nbsp;    | `~NBSP~`    | `&nbsp;` | non-breaking space |
-| &sup1;    | `~SUP1~`    | `&sup1;` | if you need 4,5,6... use supercript with numbers instead |
-| &sup2;    | `~SUP2~`    | `&sup2;` | if you need 4,5,6... use supercript with numbers instead |
-| &sup3;    | `~SUP3~`    | `&sup3;` | if you need 4,5,6... use supercript with numbers instead |
-| &dagger;  | `~DAGGER1~` | `&dagger;` | single-dagger |
-| &Dagger;  | `~DAGGER2~` | `&Dagger;` | double-dagger |
-| &circ;    | `~CIRC~`    | `&circ;` | modifier letter circumflex accent |
-| &deg;     | `~DEG~`     | `&deg;` | degree sign |
-| &amp;     | `~AMP~`     | `&amp;` | ampersand sign|
-| &reg;     | `~REG~`     | `&reg;` | registered sign |
-| &copy;    | `~COPY~`    | `&copy;` | copyright sign |
-| &trade;   | `~TRADE~`   | `&trade;` | trademark sign |
-| &#8209;   | `~NBH~`     | `&#8209;` | non-breaking hyphen `\u{2011}` |
-| &pound;   | `~£~`       | `&pound;` | pound sign knowing as `&pound;` |
-| &lsquo;   | `~LSQUO~`   | `&lsquo;` | left single quotation mark |
-| &rsquo;   | `~RSQUO~`   | `&rsquo;` | right single quotation mark |
-| &bull;    | `~BULL~`    | `&bull;` | bullet point |
-| &hellip;  | `~HELLIP~`  | `&hellip;` | horizontal ellipsis |
-| &rarr;    | `~RARR~`    | `&rarr;` | rightwards arrow |
-
--->
-
-
-
 <!-- tabs:end -->
 
 
@@ -102,7 +76,7 @@ Use this snippet to add editable `padding-top` and `padding-bottom` within modul
 
 <!-- tabs:start -->
 
-#### ** Snippet setup **
+#### ** SETUP **
 
 Use `<fields>` to define editable fields for module and add `style` and `replace-style` to tag where padding is apply - in this case is `<td>`
 
@@ -112,6 +86,5 @@ Use `<fields>` to define editable fields for module and add `style` and `replace
 ...
 <td class="modPAD" style="padding-top:25px; padding-bottom:25px;" replace-style="padding-top:{{moduleTopPad}}px; padding-bottom:{{moduleBottomPad}}px;">
 ```
-
 
 <!-- tabs:end -->
