@@ -60,7 +60,7 @@ HTML code for CMS template:
 Will export as HTML:
 
 ``` html
-<a href="https://www.currys.co.uk/gbuk/price-promise-1023-theme.html?<%@ include view='dixCPCW_CMS_TRC' %>" _label="t&c_HOM" style="font-family: Arial, Helvetica, sans-serif; font-size:11px; line-height: 13px; color:#333332; text-decoration:underline; -webkit-text-size-adjust: 90%;">currys.co.uk</a>
+<a class="ios" href="https://www.currys.co.uk/gbuk/price-promise-1023-theme.html?<%@ include view='dixCPCW_CMS_TRC' %>" _label="TsCs_HOM" style="font-family: Arial, Helvetica, sans-serif; font-size:11px; line-height: 13px; color:#333332; text-decoration:underline; -webkit-text-size-adjust: 90%;">currys.co.uk</a>
 ```
 
 <i class="fas fa-fw fa-broom"></i> Note that the code do not contains `.` **full stop** at the end of the link
@@ -78,10 +78,26 @@ HTML code for CMS template:
 Will export as HTML:
 
 ``` html
-<a href="https://www.currys.co.uk/gbuk/privacy-on-currys-321-commercial.html?<%@ include view='dixCPCW_CMS_TRC' %>" _label="TsCs" style="text-decoration:underline; color:#333333;">Privacy&nbsp;Policy</a>
+<a class="ios" href="https://www.currys.co.uk/gbuk/privacy-on-currys-321-commercial.html?<%@ include view='dixCPCW_CMS_TRC' %>" _label="TsCs" style="text-decoration:underline; color:#333333;">Privacy&nbsp;Policy</a>
 ```
 
 <i class="fas fa-fw fa-broom"></i> Note that the code do not contains `.` **full stop** at the end of the link
+
+
+
+#### ** CPCW-CUSTOMER_SERVICE **
+
+HTML code for CMS template:
+
+``` html
+<esp-personalization field="personalization_field_6_name">CPCW-CUSTOMER_SERVICE</esp-personalization>
+```
+
+Will export as HTML:
+
+``` html
+<a class="ios" style="text-decoration:underline; color:#333333; font-size:11px;" href="mailto:customer.services@currys.co.uk">customer.services@currys.co.uk</a>
+```
 
 
 <!-- tabs:end -->
