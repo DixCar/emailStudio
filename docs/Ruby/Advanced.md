@@ -100,7 +100,7 @@ Will export as HTML:
 
 
 
-## Personalisation Fields
+## CPCWB Personalisation Fields
 
 The footer backed in links relay on Personalisation Fields created in CMS.
 
